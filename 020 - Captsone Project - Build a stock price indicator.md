@@ -32,7 +32,9 @@ I know that it's coming I just hope I'm alive for it.<br>
 [Lyrics:  Successful by Drake]<br>
 
 translation -> The domain for my project is money. The problem is that everyone wants it.  I'd like to carve out a little piece of the money pie by creating a stock price predictor
-for the stocks I've been tracking for the past few years.  I'd like to a) understand how price predictions are currently done and b) explore new ways to predict stock prices.
+for the stocks I've been tracking for the past few years.  I'd like to: <br>
+a) understand how price predictions are currently done and <br>
+b) explore new ways to predict stock prices.
 
 
 **Project origin**
