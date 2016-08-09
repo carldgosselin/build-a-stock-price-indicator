@@ -21,10 +21,10 @@ They be staring at the money like it's unfamiliar', <br>
 I get it, I live it, to me there's nothings realer, <br>
 Just enough to solve your problems, <br>
 Too much would kill ya, <br>
-...
+... <br>
 A lot of y'all still sounding like last year, <br>
 The game needs change and I'm the motherf*ck#n' cashier, <br>
-...
+... <br>
 Yeah, I want it all, that's why I strive for it, <br>
 Dis me and you'll never hear a reply for it, <br>
 Any awards show or party I'll get fly for it, <br>
