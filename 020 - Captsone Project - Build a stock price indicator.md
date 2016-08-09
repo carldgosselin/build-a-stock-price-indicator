@@ -45,9 +45,9 @@ I've always been interested in understanding the stock market.  I'm happy to hav
 
 **related datasets**
 
-CSV files will capture daily stock data for the following stocks:
-1. MSFT
-2. AAPL
+CSV files will capture daily stock data for the following stocks: <br>
+1. MSFT <br>
+2. AAPL <br>
 3. 
 
 
