@@ -16,7 +16,7 @@ inclined to compare thee to a summer's day...
 
 **The problem domain**
 ...
-They be staring at the money like it's unfamilia',
+They be staring at the money like it's unfamilia',<br>
 I get it, I live it, to me there's nothings realer,
 Just enough to solve your problems,
 Too much would kill ya,
