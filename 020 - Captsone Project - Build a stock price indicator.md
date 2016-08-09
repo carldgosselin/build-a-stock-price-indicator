@@ -44,9 +44,6 @@ c) ...
 I've always been interested in understanding the stock market. <br>
 I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> I am very happy to be here! </a>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/j-6pr72cves" frameborder="0" allowfullscreen></iframe>
-
-
 **related datasets**
 
 CSV files will capture daily stock data for the following stocks: <br>
