@@ -54,9 +54,9 @@ CSV files will capture daily stock data for the following stocks: <br>
 
 
 ### Problem Statement
-[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. Youshould also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
-[//]: # " _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
-[//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_
+[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. Youshould also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:"
+[//]: # " _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_"
+[//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_"
 [//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
 
 ...
