@@ -4,7 +4,7 @@ Carl Gosselin
 September, 2016
 
 ## I. Definition
-_(approx. 1-2 pages)_
+[//]: # "_(approx. 1-2 pages)_"
 
 ### Project Overview
 In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:
@@ -41,15 +41,14 @@ c) ...
 
 **Project origin**
 
-I've always been interested in understanding the stock market. <br>
-I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
+I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
 
 **related datasets**
 
 CSV files will capture daily stock data for the following stocks: <br>
 1. MSFT <br>
 2. AAPL <br>
-3. 
+3. ... <br>
 
 
 
