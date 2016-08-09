@@ -15,7 +15,8 @@ Hey, indulge me for a minute.  I'd like to provide an overview of my project thr
 inclined to compare thee to a summer's day...
 
 **The problem domain**
-...
+
+...<br>
 They be staring at the money like it's unfamiliar',<br>
 I get it, I live it, to me there's nothings realer,<br>
 Just enough to solve your problems,<br>
@@ -35,10 +36,12 @@ for the stocks I've been tracking for the past few years.  I'd like to a) unders
 
 
 **Project origin**
+
 I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data.  
 
 
 **related datasets**
+
 CSV files will capture daily stock data for the following stocks:
 1. MSFT
 2. AAPL
