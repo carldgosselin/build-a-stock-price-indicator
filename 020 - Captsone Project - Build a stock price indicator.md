@@ -11,7 +11,15 @@ In this section, look to provide a high-level overview of the project in laymanâ
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
 
-Problem domain:  
+Hey, indulge me for a minute.  I'd like to provide an overview of my project via the altercation of my favorite rhymes.  Don't expect Shakespeare, although you may be inclined to compare thee to a summer's day...
+
+**The problem domain**
+
+ 
+
+
+
+
 
 Project origin:  
 
