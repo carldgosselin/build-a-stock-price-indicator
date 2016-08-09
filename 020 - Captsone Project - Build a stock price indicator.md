@@ -12,7 +12,7 @@ September, 2016
 [//]: # "- _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_"
 [//]: # "- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_"
 
-Hey, indulge me for a minute.  I'd like to provide an overview of my project through the slightest altercations of my favorite rhymes.  Don't expect Shakespeare, although you may be
+Hey, indulge me for a minute.  I'd like to provide an overview of my project through my favorite rhymes.  Don't expect Shakespeare, although you may be
 inclined to compare thee to a summer's day...
 
 **The problem domain**
@@ -54,11 +54,12 @@ CSV files will capture daily stock data for the following stocks: <br>
 
 
 ### Problem Statement
-In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You
-should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
-- _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
-- _Have you thoroughly discussed how you will attempt to solve the problem?_
-- _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_
+[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. Youshould also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:
+[//]: # " _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_
+[//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_
+[//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
+
+...
 
 
 
