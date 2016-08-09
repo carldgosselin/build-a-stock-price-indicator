@@ -11,19 +11,36 @@ In this section, look to provide a high-level overview of the project in laymanâ
 - _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_
 - _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_
 
-Hey, indulge me for a minute.  I'd like to provide an overview of my project via the altercation of my favorite rhymes.  Don't expect Shakespeare, although you may be inclined to compare thee to a summer's day...
+Hey, indulge me for a minute.  I'd like to provide an overview of my project through the slightest altercations of my favorite rhymes.  Don't expect Shakespeare, although you may be inclined to compare thee to a summer's day...
 
 **The problem domain**
+...
+They be staring at the money like it's unfamilia',
+I get it, I live it, to me there's nothings realer,
+Just enough to solve your problems,
+Too much would kill ya,
+...
+A lot of y'all still sounding like last year,
+The game needs change and I'm the motherf*ck#n' cashier,
+...
+Yeah, I want it all, that's why I strive for it,
+Dis me and you'll never hear a reply for it,
+Any awards show or party I'll get fly for it,
+I know that it's coming I just hope I'm alive for it.
+[Lyrics:  Successful by Drake]
 
- 
+translation -> The domain for my project is money. The problem is that everyone wants it.  I'd like to carve out a little piece of the money pie by creating a stock price predictor for the stocks I've been tracking for the past few years.  I'd like to a) understand how price predictions are currently done and b) explore new ways to predict stock prices.
 
 
+**Project origin**
+I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data.  
 
 
-
-Project origin:  
-
-related datasets:
+**related datasets**
+CSV files will capture daily stock data for the following stocks:
+1. MSFT
+2. AAPL
+3. 
 
 
 
