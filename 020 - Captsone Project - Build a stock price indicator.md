@@ -17,24 +17,25 @@ inclined to compare thee to a summer's day...
 **The problem domain**
 
 ...<br>
-They be staring at the money like it's unfamiliar',<br>
-I get it, I live it, to me there's nothings realer,<br>
-Just enough to solve your problems,<br>
-Too much would kill ya,<br>
+They be staring at the money like it's unfamiliar', <br>
+I get it, I live it, to me there's nothings realer, <br>
+Just enough to solve your problems, <br>
+Too much would kill ya, <br>
 ...
-A lot of y'all still sounding like last year,<br>
-The game needs change and I'm the motherf*ck#n' cashier,<br>
+A lot of y'all still sounding like last year, <br>
+The game needs change and I'm the motherf*ck#n' cashier, <br>
 ...
-Yeah, I want it all, that's why I strive for it,<br>
-Dis me and you'll never hear a reply for it,<br>
-Any awards show or party I'll get fly for it,<br>
-I know that it's coming I just hope I'm alive for it.<br>
-[Lyrics:  Successful by Drake]<br>
+Yeah, I want it all, that's why I strive for it, <br>
+Dis me and you'll never hear a reply for it, <br>
+Any awards show or party I'll get fly for it, <br>
+I know that it's coming I just hope I'm alive for it. <br>
+[Lyrics:  Successful by Drake] <br>
 
 translation -> The domain for my project is money. The problem is that everyone wants it.  I'd like to carve out a little piece of the money pie by creating a stock price predictor
 for the stocks I've been tracking for the past few years.  I'd like to: <br>
 a) understand how price predictions are currently done and <br>
-b) explore new ways to predict stock prices.
+b) explore new ways to predict stock prices. <br>
+c) ...
 
 
 **Project origin**
