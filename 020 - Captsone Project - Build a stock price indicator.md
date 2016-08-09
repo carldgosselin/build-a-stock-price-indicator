@@ -41,7 +41,8 @@ c) ...
 
 **Project origin**
 
-I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data.  
+I've always been interested in understanding the stock market. <br>
+I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves"> I am very happy to be here! </a>
 
 
 **related datasets**
