@@ -17,22 +17,23 @@ inclined to compare thee to a summer's day...
 **The problem domain**
 
 ...<br>
-They be staring at the money like it's unfamiliar', <br>
-I get it, I live it, to me there's nothings realer, <br>
-Just enough to solve your problems, <br>
-Too much would kill ya, <br>
+_They be staring at the money like it's unfamiliar',_ <br>
+_I get it, I live it, to me there's nothings realer,_ <br>
+_Just enough to solve your problems,_ <br>
+_Too much would kill ya,_ <br>
 ... <br>
-A lot of y'all still sounding like last year, <br>
-The game needs change and I'm the motherf*ck#n' cashier, <br>
+_A lot of y'all still sounding like last year,_ <br>
+_The game needs change and I'm the motherf*ck#n' cashier,_ <br>
 ... <br>
-Yeah, I want it all, that's why I strive for it, <br>
-Dis me and you'll never hear a reply for it, <br>
-Any awards show or party I'll get fly for it, <br>
-I know that it's coming I just hope I'm alive for it. <br>
+_Yeah, I want it all, that's why I strive for it,_ <br>
+_Dis me and you'll never hear a reply for it,_ <br>
+_Any awards show or party I'll get fly for it,_ <br>
+_I know that it's coming I just hope I'm alive for it._ <br>
 [Lyrics:  Successful by Drake] <br>
 
 translation -> The domain for my project is money. The problem is that everyone wants it.  I'd like to carve out a little piece of the money pie by creating a stock price predictor
-for the stocks I've been tracking for the past few years.  I'd like to: <br>
+for the stocks I've been tracking for the past few years. <br>
+I'd like to: <br>
 a) understand how price predictions are currently done and <br>
 b) explore new ways to predict stock prices. <br>
 c) ...
