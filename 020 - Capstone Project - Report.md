@@ -68,8 +68,11 @@ CSV files will capture daily stock data for the following stocks: <br>
 [//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_"
 [//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
 
-...
-My problem statement is straightforward - How can I increase my chances of picking "winning" stocks?
+My problem statement is simple and straightforward - How can I increase my chances of picking "winning" stocks?
+
+My current analysis involves tracking a handful of stocks on google.com/finance.  When time permits, I print-off quarterly and other reports and read them in detail.  I believe that another strategy that would complement my current analysis is creating predictive models on the price of the stock.  I feel that my feeble brain is no match for machine learning algorithms when it comes down to crunching numbers.
+
+
 
 
 
