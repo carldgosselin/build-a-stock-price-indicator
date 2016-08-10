@@ -73,16 +73,11 @@ My problem statement is simple and straightforward - How can I increase my chanc
 My current analysis involves tracking a handful of stocks on google.com/finance.  When time permits, I print-off quarterly and other reports and read them in detail.  I believe that another strategy that would complement my current analysis is creating predictive models on the price of the stock.  I feel that my feeble brain is no match for machine learning algorithms when it comes down to crunching numbers.
 
 
-
-
-
-
-
 ### Metrics
-In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project. These calculations and metrics
-should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:
-- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_
-- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_
+[//]: # "In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project."  
+[//]: # "These calculations and metricsshould be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:"
+[//]: # "- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_"
+[//]: # "- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_"
 
 confusion matrix
 [train test split?]
