@@ -37,8 +37,7 @@ for the stocks I've been tracking for the past few years. <br>
 I'd like to: <br>
 a) understand how price predictions are currently done and <br>
 b) explore new ways to predict stock prices. <br>
-c) ...
-
+c) ... <br>
 
 **Project origin**
 
@@ -75,34 +74,27 @@ My current analysis involves tracking a handful of stocks on google.com/finance.
 
 ### Metrics
 [//]: # "In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project."  
-[//]: # "These calculations and metricsshould be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:"
+[//]: # "These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:"
 [//]: # "- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_"
 [//]: # "- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_"
 
-confusion matrix
-[train test split?]
-[accuracy score...]
-
-
-
+Back-testing? <br>
+Training test split? <br>
+Confusion matrix? <br> 
+Accuracy scores? <br>
+...
 
 ## II. Analysis
-_(approx. 2-4 pages)_
+[//]: # "_(approx. 2-4 pages)_"
 
 ### Data Exploration
-In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files),
-or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or
-defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as
-features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:
-- _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_
-- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_
-- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_
-- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_
+[//]: # "In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:"
+[//]: # "- _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_"
+[//]: # "- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_"
+[//]: # "- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_"
+[//]: # "- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_"
 
-
-
-
-
+Data exploration...
 
 
 ### Exploratory Visualization
