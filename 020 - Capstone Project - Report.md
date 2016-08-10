@@ -47,9 +47,18 @@ I've always been interested in understanding the stock market.  I'm happy to hav
 **related datasets**
 
 CSV files will capture daily stock data for the following stocks: <br>
-1. MSFT <br>
-2. AAPL <br>
-3. ... <br>
+1. SPY (SPDR S&P 500 ETF) <br>
+2. UPRO (ProShares UltraPro S&P500) <br>
+3. GOOG (Google) <br>
+4. AAPL (Apple) <br>
+5. DIS (Disney) <br>
+6. NFLX (Netflix) <br>
+7. FB (Facebook) <br>
+8. AXY (Alterra Power) <br>
+9. VIX (Volatility Index) <br>
+10. TSLA (Tesla) <br>
+11. GWPH (GW Pharmaceuticals)<br>
+12. MSFT (Microsoft) <br>
 
 
 
