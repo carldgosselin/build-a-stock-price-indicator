@@ -69,6 +69,9 @@ CSV files will capture daily stock data for the following stocks: <br>
 [//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
 
 ...
+My problem statement is straightforward - How can I increase my chances of picking "winning" stocks?
+
+
 
 
 
