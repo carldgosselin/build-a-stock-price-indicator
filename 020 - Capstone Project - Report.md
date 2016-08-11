@@ -76,7 +76,23 @@ Accuracy scores? <br>
 [//]: # "- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_"
 [//]: # "- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_"
 
-Data exploration...
+For this project, I will be using data in the form of datasets.  I have selected 12 stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
+
+All stock data files have the same columns: <br>
+- Date (date of the stock price) <br>
+- Open (opening price of the stock <br>
+- High (highest price of the stock for the day) <br> 
+- Low (lowest price of the stock for the day) <br>
+- Close (price of the stock at close) <br>
+- Volume (the trading volume of the stock for the day) <br>
+- Adj Close (the adjusted close price)* <br>
+
+* the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc...
+
+Other comments about the data:
+- The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time.
+- It is possible that some of the stocks did not trade on a certain day.  "empty" trade dates will need to be addressed for appropriate visual displays.
+- 
 
 
 ### Exploratory Visualization
