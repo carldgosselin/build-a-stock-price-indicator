@@ -58,6 +58,7 @@ CSV files will capture daily stock data for the following stocks: <br>
 10. TSLA (Tesla) <br>
 11. GWPH (GW Pharmaceuticals)<br>
 12. MSFT (Microsoft) <br>
+13. GLD (SPDR Gold Shares) <br>
 
 
 
