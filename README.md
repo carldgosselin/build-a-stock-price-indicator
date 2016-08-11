@@ -1,6 +1,6 @@
 # In Progress...
 
-![alt tag](https://raw.githubusercontent.com/carldgosselin/build-a-stock-price-indicator/pics/dancingbear.gif)
+![alt tag](https://github.com/carldgosselin/build-a-stock-price-indicator/tree/master/pics/dancingbear.gif)
 
 # UDACITY - Machine Learning Engineer Nanodegree
 
