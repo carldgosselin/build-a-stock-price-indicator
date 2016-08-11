@@ -2,6 +2,7 @@
 
 <p align="center">
 ![dancingbear](pics/dancingbear.gif)
+<img source="pics/dancingbear.gif">
 </p>
 
 # UDACITY - Machine Learning Engineer Nanodegree
