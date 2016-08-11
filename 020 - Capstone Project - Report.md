@@ -45,7 +45,7 @@ I've always been interested in understanding the stock market.  I'm happy to hav
 
 **related datasets**
 
-CSV files will capture daily stock data for the following stocks for the last 5 years: <br>
+CSV files captures the daily stock data for the following stocks from the last 5 years <br>
 1. SPY (SPDR S&P 500 ETF) <br>
 2. UPRO (ProShares UltraPro S&P500) <br>
 3. GOOG (Google) <br>
