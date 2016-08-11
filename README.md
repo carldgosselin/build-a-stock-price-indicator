@@ -1,7 +1,6 @@
 # In Progress...
 
 <p align="center">
-![dancingbear](pics/dancingbear.gif)
 <img src="pics/dancingbear.gif">
 </p>
 
