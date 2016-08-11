@@ -16,8 +16,7 @@ Hey, indulge me for a minute.  I'd like to provide an overview of my project thr
 inclined to compare thee to a summer's day...
 
 **The problem domain**
-
-...<br>
+...[<a href="https://youtu.be/Yeh4iGnMTAw?t=50s" target="_blank"> Play </a>]<br>
 _They be staring at the money like it's unfamiliar',_ <br>
 _I get it, I live it, to me there's nothings realer,_ <br>
 _Just enough to solve your problems,_ <br>
