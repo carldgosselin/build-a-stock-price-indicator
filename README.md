@@ -1,5 +1,7 @@
 # In Progress...
 
+![alt tag](https://raw.githubusercontent.com/carldgosselin/build-a-stock-price-indicator/pics/dancingbear.gif)
+
 # UDACITY - Machine Learning Engineer Nanodegree
 
 ### Capstone Project: Build a stock price indicator
