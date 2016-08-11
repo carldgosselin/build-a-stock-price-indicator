@@ -19,6 +19,24 @@ a) understand how machine learning algorithms are currently used in the stock ma
 b) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
 c) and finally, to make an attempt at resolving one of the challenges of applying machine learning algorithms to predicting stock prices <br>
 
+Hey, indulge me for a minute.  I'd like to provide an overview of my project through my favorite rhymes.  Don't expect Shakespeare, although you may be
+inclined to compare thee to a summer's day...
+
+...[<a href="https://youtu.be/Yeh4iGnMTAw?t=52s" target="_blank"> Play </a>]<br>
+_They be staring at the money like it's unfamiliar',_ <br>
+_I get it, I live it, to me there's nothings realer,_ <br>
+_Just enough to solve your problems,_ <br>
+_Too much would kill ya,_ <br>
+... <br>
+_A lot of y'all still sounding like last year,_ <br>
+_The game needs change and I'm the motherf*ck#n' cashier,_ <br>
+... <br>
+_Yeah, I want it all, that's why I strive for it,_ <br>
+_Dis me and you'll never hear a reply for it,_ <br>
+_Any awards show or party I'll get fly for it,_ <br>
+_I know that it's coming I just hope I'm alive for it._ <br>
+[Lyrics:  Successful by Drake] <br>
+
 **Project origin**
 
 I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
