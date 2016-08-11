@@ -1,6 +1,8 @@
 # In Progress...
 
+<p align="center">
 ![dancingbear](pics/dancingbear.gif)
+</p>
 
 # UDACITY - Machine Learning Engineer Nanodegree
 
