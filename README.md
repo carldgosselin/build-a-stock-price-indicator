@@ -28,4 +28,19 @@ This project requires the following software and libraries:
 
 Open the following file in an iPython notebook:  `build_a_stock_price_indicator.ipynb`
 
-### Datasets or real-time call via API?
+### Datasets
+
+CSV files will capture daily stock data for the following stocks for the last 5 years: <br>
+1. SPY (SPDR S&P 500 ETF) <br>
+2. UPRO (ProShares UltraPro S&P500) <br>
+3. GOOG (Google) <br>
+4. AAPL (Apple) <br>
+5. DIS (Disney) <br>
+6. NFLX (Netflix) <br>
+7. FB (Facebook) <br>
+8. AXY (Alterra Power) <br>
+9. VIX (Volatility Index) <br>
+10. TSLA (Tesla) <br>
+11. GWPH (GW Pharmaceuticals)<br>
+12. MSFT (Microsoft) <br>
+13. GLD (SPDR Gold Shares) <br>
