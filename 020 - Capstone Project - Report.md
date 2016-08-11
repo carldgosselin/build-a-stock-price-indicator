@@ -15,9 +15,10 @@ September, 2016
 **The problem domain**
 
 I've chosen to apply my new found knowledge in the investment and trading domain. I keep hearing that many firms are using machine learning algorithms to gain an edge in the market.  For this project, I'd like to:<br>
-a) understand how machine learning algorithms are currently used in the stock market <br>
-b) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
-c) and finally, to make an attempt at resolving one of the challenges of applying machine learning algorithms to predicting stock prices <br>
+
+A) understand how machine learning algorithms are currently used in the stock market <br>
+B) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
+C) and finally, to make an attempt at resolving one of the challenges of applying machine learning algorithms to predicting stock prices <br>
 
 **Project origin**
 
