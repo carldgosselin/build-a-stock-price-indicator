@@ -26,8 +26,6 @@ This project originated from Udacity's course - <a href="https://www.udacity.com
 
 I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
 
-note:  a big shoutout to the 
-
 **Related datasets**
 
 CSV files captures the daily stock data for the following stocks from the last 5 years <br>
@@ -98,7 +96,7 @@ Other comments about the data: <br>
 - It is possible that some of the stocks did not trade on a certain day.  Stock with no trades on a specific day will need a "nan" (or similar) inserted into the empty cell. <br>
 - CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
 - When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
-- To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner.
+- To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner. <br>
 
 
 ### Exploratory Visualization
