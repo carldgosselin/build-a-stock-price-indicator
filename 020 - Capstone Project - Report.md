@@ -89,9 +89,8 @@ All stock data files have the same columns: <br>
 - Low (lowest price of the stock for the day) <br>
 - Close (price of the stock at close) <br>
 - Volume (the trading volume of the stock for the day) <br>
-- Adj Close (the adjusted close price)* <br>
-
-* the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc...
+- Adj Close (the adjusted close price) <br>
+note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc...
 
 Other comments about the data:
 - The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time.
