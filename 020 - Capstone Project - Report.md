@@ -90,12 +90,15 @@ All stock data files have the same columns: <br>
 - Close (price of the stock at close) <br>
 - Volume (the trading volume of the stock for the day) <br>
 - Adj Close (the adjusted close price) <br>
-note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc...
+note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc... <br>
 
-Other comments about the data:
-- The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time.
-- It is possible that some of the stocks did not trade on a certain day.  "empty" trade dates will need to be addressed for appropriate visual displays.
-- 
+Other comments about the data: <br>
+- By default, the csv files are indexed by a number starting from "0".  The code will need to explicitly identify the "Date" column as the index column. <br>
+- The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time. <br>
+- It is possible that some of the stocks did not trade on a certain day.  Stock with no trades on a specific day will need a "nan" (or similar) inserted into the empty cell. <br>
+- CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
+- When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
+- To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner.
 
 
 ### Exploratory Visualization
