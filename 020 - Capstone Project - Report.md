@@ -22,7 +22,11 @@ C) and finally, to make an attempt at resolving one of the challenges of applyin
 
 **Project origin**
 
+This project originated from Udacity's course - <a href="https://www.udacity.com/course/machine-learning-for-trading--ud501?_ga=1.193565739.763209811.1447720300"> Machine Learning for Trading </a>.  
+
 I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
+
+note:  a big shoutout to the 
 
 **Related datasets**
 
