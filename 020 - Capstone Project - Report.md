@@ -14,7 +14,7 @@ September, 2016
 
 **The problem domain**
 
-I've chosen to apply my new-found knowledge in the investment and trading domain. I keep hearing that many firms are using machine learning algorithms to gain an edge in the market.  For this project, I'd like to:<br>
+I've chosen to apply my new-found knowledge in machine learning algorithms to the investment and trading domain. I keep hearing that many firms are using machine learning algorithms to gain an edge in the market.  For this project, I'd like to:<br>
 
 A) understand how machine learning algorithms are currently used in the stock market <br>
 B) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
