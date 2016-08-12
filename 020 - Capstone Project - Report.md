@@ -24,7 +24,7 @@ C) and finally, to make an attempt at resolving one of the challenges of applyin
 
 I've always been interested in understanding the stock market.  I'm happy to have the opportunity to apply machine learning algorithms to stock data. <a href="https://www.youtube.com/watch?v=j-6pr72cves" target="_blank"> "_I am very happy to be here!_" </a>
 
-**related datasets**
+**Related datasets**
 
 CSV files captures the daily stock data for the following stocks from the last 5 years <br>
 1. SPY (SPDR S&P 500 ETF) <br>
