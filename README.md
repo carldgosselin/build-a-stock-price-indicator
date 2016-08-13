@@ -35,6 +35,7 @@ CSV files captures the daily stock data for the following stocks from the last 5
 2. UPRO (ProShares UltraPro S&P500) <br>
 3. GOOG (Google) <br>
 4. AAPL (Apple) <br>
+5. AMZN (Amazon) <br>
 5. DIS (Disney) <br>
 6. NFLX (Netflix) <br>
 7. FB (Facebook) <br>
