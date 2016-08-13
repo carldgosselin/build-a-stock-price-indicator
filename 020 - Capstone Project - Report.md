@@ -100,11 +100,11 @@ Other comments about the data: <br>
 
 
 ### Exploratory Visualization
-In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should
-adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant characteristic or feature about the dataset or input data?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
+[//]: # "In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should"
+[//]: # "adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:"
+[//]: # "- _Have you visualized a relevant characteristic or feature about the dataset or input data?_"
+[//]: # "- _Is the visualization thoroughly analyzed and discussed?_"
+[//]: # "- _If a plot is provided, are the axes, title, and datum clearly defined?_"
 
 [please view *exploratory_visualization.ipynb* for this section]
 
