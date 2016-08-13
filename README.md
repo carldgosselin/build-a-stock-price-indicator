@@ -36,12 +36,12 @@ CSV files captures the daily stock data for the following stocks from the last 5
 3. GOOG (Google) <br>
 4. AAPL (Apple) <br>
 5. AMZN (Amazon) <br>
-5. DIS (Disney) <br>
-6. NFLX (Netflix) <br>
-7. FB (Facebook) <br>
-8. AXY (Alterra Power) <br>
-9. VIX (Volatility Index) <br>
-10. TSLA (Tesla) <br>
-11. GWPH (GW Pharmaceuticals)<br>
-12. MSFT (Microsoft) <br>
-13. GLD (SPDR Gold Shares) <br>
+6. DIS (Disney) <br>
+7. NFLX (Netflix) <br>
+8. FB (Facebook) <br>
+9. AXY (Alterra Power) <br>
+10. VIX (Volatility Index) <br>
+11. TSLA (Tesla) <br>
+12. GWPH (GW Pharmaceuticals)<br>
+13. MSFT (Microsoft) <br>
+14. GLD (SPDR Gold Shares) <br>
