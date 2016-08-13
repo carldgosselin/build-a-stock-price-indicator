@@ -106,7 +106,7 @@ adequately support the data being used. Discuss why this visualization was chose
 - _Is the visualization thoroughly analyzed and discussed?_
 - _If a plot is provided, are the axes, title, and datum clearly defined?_
 
-non-normalized to normalized
+[please view *exploratory_visualization.ipynb* for this section]
 
 
 
