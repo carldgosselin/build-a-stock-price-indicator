@@ -68,7 +68,7 @@ Confusion matrix? <br>
 Accuracy scores? <br>
 ...
 
-Or simply put, I want to know when to buy (buy low) and when to sell (sell high)
+Or simply put, will the results be successful in buying low and selling high?
 
 ## II. Analysis
 [//]: # "_(approx. 2-4 pages)_"
