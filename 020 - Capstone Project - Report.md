@@ -68,6 +68,8 @@ Confusion matrix? <br>
 Accuracy scores? <br>
 ...
 
+Or simply put, I want to know when to buy (buy low) and when to sell (sell high)
+
 ## II. Analysis
 [//]: # "_(approx. 2-4 pages)_"
 
@@ -109,7 +111,6 @@ Other comments about the data: <br>
 [please view *exploratory_visualization.ipynb* for this section]
 
 
-
 ### Algorithms and Techniques
 In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics
 of the problem and the problem domain. Questions to ask yourself when writing this section:
@@ -133,6 +134,62 @@ you identified about the dataset will be addressed and corrected here. Questions
 - _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
 - _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
 - _If no preprocessing is needed, has it been made clear why?_
+
+For this project, I will be using data in the form of datasets.  I have selected 12 stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
+
+All stock data files have the same columns: <br>
+- Date (date of the stock price) <br>
+- Open (opening price of the stock <br>
+- High (highest price of the stock for the day) <br> 
+- Low (lowest price of the stock for the day) <br>
+- Close (price of the stock at close) <br>
+- Volume (the trading volume of the stock for the day) <br>
+- Adj Close (the adjusted close price) <br>
+note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc... <br>
+
+Other comments about the data: <br>
+- By default, the csv files are indexed by a number starting from "0".  The code will need to explicitly identify the "Date" column as the index column. <br>
+- The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time. <br>
+- It is possible that some of the stocks did not trade on a certain day.  Stock with no trades on a specific day will need a "nan" (or similar) inserted into the empty cell. <br>
+- CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
+- When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
+- To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner. <br>
+
+Other comments that are also included in the exploratory visualization ipynb document...
+
+The above graph display GOOG prices at close.
+Challenge #1: The data is displayed backwards in time when ready the data directly from the csv file.
+Challenge #2: Only one stock is displayed in the graph. We need to add more stocks for comparison.
+Challenge #3: The graph shows 5 years worth of data.  Let's only view the last 2 years in the next graph.
+
+
+Let's fix these challenges in the next visual...
+-----
+
+The above graph displays the list of stocks I've been tracking for a few years.
+
+
+Progress from last visual...
+- Overcame the challenge of showing more than one stock in a graph. The graph is now showing multiple stocks.
+- Also, overcame the challenge of creating redundant code by creating a utility function to pull data from each csv file.
+- Resolved the challenge of the data displaying stock prices in reverse order.
+- Sliced the data to show 2 years worth of data.  The csv files cover 5 years worth of data.
+
+
+Challenge: It is hard to visually assess the stocks at different price points.
+This can be resolved by normalizing the data.  Let's fix this challenge in the next visual...
+-----
+
+The above graph normalizes the stock data at a starting point of 1 dollar.
+
+
+Result: Whoah!  This graph is way too busy.  The same colour is applied to more than one stock.
+The next series of graphs will divide the stock into smaller groups for more meaningful comparisons...
+-----
+
+
+
+
 
 ### Implementation
 In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear
