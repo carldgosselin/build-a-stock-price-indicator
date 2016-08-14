@@ -110,6 +110,8 @@ Other comments about the data: <br>
 [//]: # "- _If a plot is provided, are the axes, title, and datum clearly defined?_"
 
 [please view *exploratory_visualization.ipynb* for this section]
+[also, please view *170_bollinger_bands.ipynb* for this section]
+note:  comments are included in the above files.
 
 
 ### Algorithms and Techniques
@@ -120,8 +122,7 @@ of the problem and the problem domain. Questions to ask yourself when writing th
 - _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
 
 ### Benchmark
-In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the
-benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
+In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
 - _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
 
