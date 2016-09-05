@@ -47,7 +47,7 @@ CSV files captures the daily stock data for the following stocks from the last 5
 
 
 ### Problem Statement
-[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. Youshould also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:"
+[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:"
 [//]: # " _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_"
 [//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_"
 [//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
@@ -62,6 +62,8 @@ My current analysis involves tracking a handful of stocks on google.com/finance.
 [//]: # "These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:"
 [//]: # "- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_"
 [//]: # "- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_"
+
+action:  clearly discuss and define measures of perfomance...
 
 Back-testing? <br>
 Training test split? <br>
@@ -80,6 +82,8 @@ Or simply put, will the results be successful in buying low and selling high?
 [//]: # "- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_"
 [//]: # "- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_"
 [//]: # "- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_"
+
+
 
 For this project, I will be using data in the form of datasets.  I have selected 12 stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
 
@@ -100,6 +104,10 @@ Other comments about the data: <br>
 - CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
 - When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
 - To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner. <br>
+- abnormality -> dividends and stock splits. Need to use adjusted close.  Historical data gets adjusted for this purpose.
+<br>
+- talk about normalization... to be able to compare stocks traded at different price points, stocks will be normalized to start at $1.  This way, one can compare the magnitude of positive and negative direction.
+<br>
 
 
 ### Exploratory Visualization
@@ -111,6 +119,9 @@ Other comments about the data: <br>
 
 [please view *exploratory_visualization.ipynb* for this section]
 [also, please view *170_bollinger_bands.ipynb* for this section]
+[also, please view all of the other files for visual exploration...]
+[- ....]
+[- ....]
 note:  comments are included in the above files.
 
 
@@ -125,6 +136,8 @@ of the problem and the problem domain. Questions to ask yourself when writing th
 In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
 - _Has some result or value been provided that acts as a benchmark for measuring performance?_
 - _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
+
+benchmark... SPY?
 
 
 ## III. Methodology
