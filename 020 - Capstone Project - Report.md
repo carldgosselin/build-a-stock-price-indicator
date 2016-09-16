@@ -4,21 +4,15 @@ Carl Gosselin
 September, 2016
 
 ## I. Definition
-[//]: # "_(approx. 1-2 pages)_"
 
 ### Project Overview
-
-[//]: # "In this section, look to provide a high-level overview of the project in layman’s terms. Questions to ask yourself when writing this section:"
-[//]: # "- _Has an overview of the project been provided, such as the problem domain, project origin, and related datasets or input data?_"
-[//]: # "- _Has enough background information been given so that an uninformed reader would understand the problem domain and following problem statement?_"
 
 **The problem domain**
 
 I've chosen to apply my new-found knowledge in machine learning algorithms to the investment and trading domain. I keep hearing that many firms are using machine learning algorithms to gain an edge in the market.  For this project, I'd like to:<br>
 
-A) understand how machine learning algorithms are currently used in the stock market <br>
+A) understand how to apply machine learning algorithms to stock data to predict future price <br>
 B) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
-C) and finally, to make an attempt at resolving one of the challenges of applying machine learning algorithms to predicting stock prices <br>
 
 **Project origin**
 
@@ -45,12 +39,7 @@ CSV files captures the daily stock data for the following stocks from the last 5
 14. GLD (SPDR Gold Shares) <br>
 
 
-
 ### Problem Statement
-[//]: # "In this section, you will want to clearly define the problem that you are trying to solve, including the strategy (outline of tasks) you will use to achieve the desired solution. You should also thoroughly discuss what the intended solution will be for this problem. Questions to ask yourself when writing this section:"
-[//]: # " _Is the problem statement clearly defined? Will the reader understand what you are expecting to solve?_"
-[//]: # " _Have you thoroughly discussed how you will attempt to solve the problem?_"
-[//]: # " _Is an anticipated solution clearly defined? Will the reader understand what results you are looking for?_"
 
 My problem statement is simple and straightforward - How can I increase my chances of picking "winning" stocks?
 
@@ -58,25 +47,14 @@ My current analysis involves tracking a handful of stocks on google.com/finance.
 
 
 ### Metrics
-[//]: # "In this section, you will need to clearly define the metrics or calculations you will use to measure performance of a model or result in your project."  
-[//]: # "These calculations and metrics should be justified based on the characteristics of the problem and problem domain. Questions to ask yourself when writing this section:"
-[//]: # "- _Are the metrics you’ve chosen to measure the performance of your models clearly discussed and defined?_"
-[//]: # "- _Have you provided reasonable justification for the metrics chosen based on the problem and solution?_"
 
-I will be using a train/test split on the stock data.  A section of the data will be used to train the model and another section will be used to test the model on unseen data (out of sample data).  
+I will be using a train/test split on the stock data.  A section of the data will be used to train the model and another section will be used to test the model on unseen data (out of sample data).  I will use the score method to measure the difference between predicted prices and real prices in the testing (out-of-sample) dataset.  
 
 ## II. Analysis
-[//]: # "_(approx. 2-4 pages)_"
 
 ### Data Exploration
-[//]: # "In this section, you will be expected to analyze the data you are using for the problem. This data can either be in the form of a dataset (or datasets), input data (or input files), or even an environment. The type of data should be thoroughly described and, if possible, have basic statistics and information presented (such as discussion of input features or defining characteristics about the input or environment). Any abnormalities or interesting qualities about the data that may need to be addressed have been identified (such as features that need to be transformed or the possibility of outliers). Questions to ask yourself when writing this section:"
-[//]: # "- _If a dataset is present for this problem, have you thoroughly discussed certain features about the dataset? Has a data sample been provided to the reader?_"
-[//]: # "- _If a dataset is present for this problem, are statistics about the dataset calculated and reported? Have any relevant results from this calculation been discussed?_"
-[//]: # "- _If a dataset is **not** present for this problem, has discussion been made about the input space or input data for your problem?_"
-[//]: # "- _Are there any abnormalities or characteristics about the input space or dataset that need to be addressed? (categorical variables, missing values, outliers, etc.)_"
 
-
-For this project, I will be using data in the form of datasets.  I have selected 12 stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
+For this project, I will be using data in the form of datasets.  I have selected 12+ stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
 
 All stock data files have the same columns: <br>
 - Date (date of the stock price) <br>
@@ -95,187 +73,169 @@ Other comments about the data: <br>
 - CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
 - When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
 - To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner. <br>
-- abnormality -> dividends and stock splits. Need to use adjusted close.  Historical data gets adjusted for this purpose.
-<br>
-- talk about normalization... to be able to compare stocks traded at different price points, stocks will be normalized to start at $1.  This way, one can compare the magnitude of positive and negative direction.
+- abnormality -> dividends and stock splits. Need to use adjusted close.  Historical data gets adjusted for this purpose.<br>
+- To be able to compare stocks, the stock data will need to be normalized to view the differences in performance through time.
 <br>
 
 
 ### Exploratory Visualization
-[//]: # "In this section, you will need to provide some form of visualization that summarizes or extracts a relevant characteristic or feature about the data. The visualization should"
-[//]: # "adequately support the data being used. Discuss why this visualization was chosen and how it is relevant. Questions to ask yourself when writing this section:"
-[//]: # "- _Have you visualized a relevant characteristic or feature about the dataset or input data?_"
-[//]: # "- _Is the visualization thoroughly analyzed and discussed?_"
-[//]: # "- _If a plot is provided, are the axes, title, and datum clearly defined?_"
 
-The data has been visualized in many different ways and documented in a few files.  Files on github:
+Below is a series of files that visualized the data is various ways:
 (note:  comments are included in the ipynb files)
 
-1) 160_exploratory_visualization.ipynb
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/160_exploratory_visualization.ipynb"> 160_exploratory_visualization.ipynb </a>
 - Visuals in this file display normalized data in comparison to the benchmark stock (SPY)
-- The visuals quickly show which stocks performed better than the benchmark stock (SPY)
+- The visuals quickly show which stocks performed better (or worse) than the benchmark stock (SPY)
 
-2) 170_bollinger_bands.ipynb
-- Visuals in this file display the famous bollinger bands for a selected number of stocks
-- The width between the upper and lower bands indicate the amount of risk (aka standard deviation) in a stocks movement
+2) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/170_bollinger_bands.ipynb">170_bollinger_bands.ipynb </a>
+- Visuals in this file display the famous bollinger bands TM for a selected number of stocks
+- The space between the upper and lower bands indicate the amount of risk (aka standard deviation) in a stocks movement
  
-3) 180_daily_returns.ipynb
+3) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/180_daily_returns.ipynb">180_daily_returns.ipynb </a>
 - Visuals in this file show the daily returns of a stock in comparison to the benchmark stock (SPY)
-- The visuals also displays how much a stock moves along (or against) the movement of the benchmark stock (SPY)
+- The visuals also display how much a stock moves along (or against) the movement of the benchmark stock (SPY)
 
-4) 200_fill_missing_values.ipynb
+4) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/200_fill_missing_values.ipynb">200_fill_missing_values.ipynb </a>
 - The visuals in this file show the gaps in trading for stocks that are not traded every day
 - Forward filling and back filling techniques were applied to be able to compare, as best as possible, against other stocks traded on a daily basis
 
-5) 210_plot_histograms.ipynb
+5) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/210_plot_histograms.ipynb">210_plot_histograms.ipynb </a>
 - Another way to visualize the data was to display the stock with histograms
-- In this file, daily returns were compared to the benchmark stocks in the same graph
+- In this file, daily returns were compared to the benchmark stock, SPY, in the same graph
 
-6) 220_scatterplots_beta_alpha_and_correlation.ipynb
+6) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/220_scatterplots_beta_alpha_and_correlation.ipynb">220_scatterplots_beta_alpha_and_correlation.ipynb </a>
 - Scatterplots were created to compare stocks to the benchmark stock (SPY)
 - This file also captured the beta and alpha variables.
 - The beta variable indicates how much more reactive the stock is to the market than the benchmark stock (SPY)
 - the alpha variable indicates how well the stock performs with respect to the benchmark stock (SPY).
 
-7) 280_portfolio_statistics_visual.ipynb
+7) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/280_portfolio_statistics_visual.ipynb">280_portfolio_statistics_visual.ipynb </a>
 - The visuals in this file shows the performance of selected stocks as a portfolio
 - This portfolio of stocks was then compared to the benchmark stock (SPY)
+- The portfolio of stocks performed better than the SPY benchmark stock
 
-8) 290_portfolio_allocation_optimization.ipynb
+8) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/290_portfolio_allocation_optimization.ipynb">290_portfolio_allocation_optimization.ipynb </a>
 - This visual shows the performance of a portfolio of stock after portfolio optimization
+- Wow, what a difference.  The optimization focuses on only two stocks in the portfolio of stocks (AMZN and AXY)
 
-9) 300_CAPM_with_optimized_portfolio_allocation.ipynb
+9) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/300_CAPM_with_optimized_portfolio_allocation.ipynb">300_CAPM_with_optimized_portfolio_allocation.ipynb </a>
 - This visual takes the data from the previous file and display the CAPM visual
 - This file also captured the beta and alpha variables.
 - The beta variable indicates how much more reactive the stock is to the market than the benchmark stock (SPY)
 - the alpha variable indicates how well the stock performs with respect to the benchmark stock (SPY).
 
-10) 310_return_vs_risk_scatterplot.ipynb
+10) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/310_return_vs_risk_scatterplot.ipynb">310_return_vs_risk_scatterplot.ipynb </a>
 - This visual displays a graph for the amount of risk vs return for a selected number of stocks
 
 
 
 ### Algorithms and Techniques
-In this section, you will need to discuss the algorithms and techniques you intend to use for solving the problem. You should justify the use of each one based on the characteristics
-of the problem and the problem domain. Questions to ask yourself when writing this section:
-- _Are the algorithms you will use, including any default variables/parameters in the project clearly defined?_
-- _Are the techniques to be used thoroughly discussed and justified?_
-- _Is it made clear how the input data or datasets will be handled by the algorithms and techniques chosen?_
 
-For this project, I will be using two supervised learning algorithms to "predict" stock prices.  The first is linear regression and the second is k nearest neighbors.  
-
+For this project, I will be using two supervised learning algorithms to "predict" stock prices:
+1) sklearn's Linear Regression
+2) sklearn's K Nearest Neighbors
 
 
 ### Benchmark
-In this section, you will need to provide a clearly defined benchmark result or threshold for comparing across performances obtained by your solution. The reasoning behind the benchmark (in the case where it is not an established result) should be discussed. Questions to ask yourself when writing this section:
-- _Has some result or value been provided that acts as a benchmark for measuring performance?_
-- _Is it clear how this result or value was obtained (whether by data or by hypothesis)?_
 
-The benchmark for linear regression is ....
-
-
-The benchmark for k nearest neighbors is ...
+The benchmark for both the linear regression and knn regression algorithms will be a predictive score of 50%.  If one of the algorithms return a score above 50% with unseen data, then this would indicate a better than chance indicator for predicting the future price of a stock.
 
 
 ## III. Methodology
-_(approx. 3-5 pages)_
 
 ### Data Preprocessing
-In this section, all of your preprocessing steps will need to be clearly documented, if any were necessary. From the previous section, any of the abnormalities or characteristics that
-you identified about the dataset will be addressed and corrected here. Questions to ask yourself when writing this section:
-- _If the algorithms chosen require preprocessing steps like feature selection or feature transformations, have they been properly documented?_
-- _Based on the **Data Exploration** section, if there were abnormalities or characteristics that needed to be addressed, have they been properly corrected?_
-- _If no preprocessing is needed, has it been made clear why?_
 
-For this project, I will be using data in the form of datasets.  I have selected 12 stocks that are actively traded on the stock market.  I've also included data related to the volatility index (VIX).  This is also known as the fear gauge.  It is explained that when the VIX is high, the market moves lower as they are (supposedly) inversely related.  I plan to include the VIX data with other stocks in visual comparisons.
+As previously discussed, 12+ stocks have been selected for this project.  The following pre-processing steps were taken: 
+- By default, the csv files are indexed by a number starting from "0".  The code needed to explicitly identify the "Date" column as the index column. <br>
+- The data in the csv files begin with the latest trade day. The data needed to be re-organized to show a proper linear progression through time. <br>
+- Some of the stocks did not trade on a certain day(e.g. AXY).  Stock with no trades on a specific day needed to a "nan" (or similar) inserted into the empty cell.  Backfill and Forwardfill techniques were applied to the data for the ability to compare one stock to another. <br>
+- CSV files needed to be joined to combine data for comparison. A utility was created to join files efficiently. <br>
+- When joining csv files for different stocks, column names needed to be modified to prevent duplication of column titles.  Columns were renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names avoided overlapping of column names during csv/table joins. <br>
+- To prevent duplicating code, a utility function needed to be built to process all csv stock files in an efficient manner. <br>
 
-All stock data files have the same columns: <br>
-- Date (date of the stock price) <br>
-- Open (opening price of the stock <br>
-- High (highest price of the stock for the day) <br> 
-- Low (lowest price of the stock for the day) <br>
-- Close (price of the stock at close) <br>
-- Volume (the trading volume of the stock for the day) <br>
-- Adj Close (the adjusted close price) <br>
-note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc... <br>
-
-Other comments about the data: <br>
-- By default, the csv files are indexed by a number starting from "0".  The code will need to explicitly identify the "Date" column as the index column. <br>
-- The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time. <br>
-- It is possible that some of the stocks did not trade on a certain day.  Stock with no trades on a specific day will need a "nan" (or similar) inserted into the empty cell. <br>
-- CSV files will need to be joined to combine data for comparison. In other words, csv files will need to be joined. <br>
-- When joining csv files for different stocks, column names will need to be modified to prevent duplication of column titles.  To avoid processing errors, columns will be renamed to the stock ticker.  E.g. "Adj Close" -> "GOOG".  Updating column names will avoid overlapping of column names during csv/table joins. <br>
-- To prevent duplicating code, a utility function will need to be built to process all csv stock files in an efficient manner. <br>
-
-Other comments that are also included in the exploratory visualization ipynb document...
-
-The above graph display GOOG prices at close.
-Challenge #1: The data is displayed backwards in time when ready the data directly from the csv file.
-Challenge #2: Only one stock is displayed in the graph. We need to add more stocks for comparison.
-Challenge #3: The graph shows 5 years worth of data.  Let's only view the last 2 years in the next graph.
-
-
-Let's fix these challenges in the next visual...
------
-
-The above graph displays the list of stocks I've been tracking for a few years.
-
-
-Progress from last visual...
-- Overcame the challenge of showing more than one stock in a graph. The graph is now showing multiple stocks.
-- Also, overcame the challenge of creating redundant code by creating a utility function to pull data from each csv file.
-- Resolved the challenge of the data displaying stock prices in reverse order.
-- Sliced the data to show 2 years worth of data.  The csv files cover 5 years worth of data.
-
-
-Challenge: It is hard to visually assess the stocks at different price points.
-This can be resolved by normalizing the data.  Let's fix this challenge in the next visual...
------
-
-The above graph normalizes the stock data at a starting point of 1 dollar.
-
-
-Result: Whoah!  This graph is way too busy.  The same colour is applied to more than one stock.
-The next series of graphs will divide the stock into smaller groups for more meaningful comparisons...
------
-
-
-
+You can also find additional data preprocessing comments in the ipynb files:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/160_exploratory_visualization.ipynb"> 160_exploratory_visualization.ipynb </a>
+2) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/170_bollinger_bands.ipynb">170_bollinger_bands.ipynb </a>
+3) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/180_daily_returns.ipynb">180_daily_returns.ipynb </a>
+4) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/200_fill_missing_values.ipynb">200_fill_missing_values.ipynb </a>
+5) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/210_plot_histograms.ipynb">210_plot_histograms.ipynb </a>
+6) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/220_scatterplots_beta_alpha_and_correlation.ipynb">220_scatterplots_beta_alpha_and_correlation.ipynb </a>
+7) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/280_portfolio_statistics_visual.ipynb">280_portfolio_statistics_visual.ipynb </a>
+8) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/290_portfolio_allocation_optimization.ipynb">290_portfolio_allocation_optimization.ipynb </a>
+9) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/300_CAPM_with_optimized_portfolio_allocation.ipynb">300_CAPM_with_optimized_portfolio_allocation.ipynb </a>
+10) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/310_return_vs_risk_scatterplot.ipynb">310_return_vs_risk_scatterplot.ipynb </a>
 
 
 ### Implementation
-In this section, the process for which metrics, algorithms, and techniques that you implemented for the given data will need to be clearly documented. It should be abundantly clear
-how the implementation was carried out, and discussion should be made regarding any complications that occurred during this process. Questions to ask yourself when writing this
-section:
+
 - _Is it made clear how the algorithms and techniques were implemented with the given datasets or input data?_
+
+I used two algorithms for predicting stock prices in five days.  To do this, I copied over the adjusted price column in the csv file and "shifted" the column upwards 5 days (5 rows).  I then had to manually split the data between the training group and the testing group as sklearn's train_test_split function did not have roll-forward cross-validation functionality.  With the dataset split between training and testing, I applied two algorithms to the data; linear regression and knn regression.  To my surprise, linear regression performed better than the knn regression algorithm.  Linear regression received a score of 0.68 in the testing phase and knn regression received an abismal  -22.54.  I really thought knn regression would have performed better.  Related code files:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/320_supervised_linear_regression.ipynb"> 320_supervised_linear_regression.ipynb </a>
+2) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/330_supervised_knn_regression.ipynb"> 330_supervised_knn_regression.ipynb </a>
+
+
 - _Were there any complications with the original metrics or techniques that required changing prior to acquiring a solution?_
+
+yes, predicting time-series data without cheating requires chronological data to properly train and test the algorithm.  using sklearn's train_test_split function, data in the training group had datapoints that were further into the future than data in the testing set.  This means that the algorithm was able to peek into the future.  With this setup, both algorithms generated a perfect score of 1 for predicting future prices.  With this realization, I was forced to manually split the date with custom code.
+
+
 - _Was there any part of the coding process (e.g., writing complicated functions) that should be documented?_
-
-
-
-
+All of my code is documented/captured in my github repository:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/320_supervised_linear_regression.ipynb"> 320_supervised_linear_regression.ipynb </a>
+2) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/330_supervised_knn_regression.ipynb"> 330_supervised_knn_regression.ipynb </a>
+or
+3) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator"> Project Repository - top folder</a>
 
 
 ### Refinement
-In this section, you will need to discuss the process of improvement you made upon the algorithms and techniques you used in your implementation. For example, adjusting parameters for
-certain models to acquire improved solutions would fall under the refinement category. Your initial and final solutions should be reported, as well as any significant intermediate
-results as necessary. Questions to ask yourself when writing this section:
+
 - _Has an initial solution been found and clearly reported?_
+
+The initial solution for knn regression had a k_neighbors values of 10.  This value produced a score of on the out-of-sample data of -22.71 (this is abismal, I know).  Passing a number of k values through GridsearchCV recommended a k_neighbors value of 25.  This value produced a score on out-of-sample data of -22.54 (only marginally better).  In conclusion, knn regression on this dataset is abismal.
+
 - _Is the process of improvement clearly documented, such as what techniques were used?_
+
+I created a function call train_knn to apply the GridsearchCV function to find the optimal values for 'n_neighbors', 'leaf_size', and 'weights'.  GridsearchCV came back with the following best parameter:  {'n_neighbors': 25, 'weights': 'uniform', 'leaf_size': 1}
+
+Code:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/330_supervised_knn_regression.ipynb"> 330_supervised_knn_regression.ipynb </a>
+
+
 - _Are intermediate and final solutions clearly reported as the process is improved?_
+n/a
 
 
 ## IV. Results
-_(approx. 2-3 pages)_
 
 ### Model Evaluation and Validation
-In this section, the final model and any supporting qualities should be evaluated in detail. It should be clear how the final model was derived and why this model was chosen. In
-addition, some type of analysis should be used to validate the robustness of this model and its solution, such as manipulating the input data or environment to see how the model’s
-solution is affected (this is called sensitivity analysis). Questions to ask yourself when writing this section:
+
 - _Is the final model reasonable and aligning with solution expectations? Are the final parameters of the model appropriate?_
+
+I chose to apply both a linear regression and knn regression on stock data.  The purpose of this exercise was to see the effectiveness of these two algorithms in predicting the stock price 5 days later.
+
+For the linear regression model, no parameters were tweaked.  I applied the linear regression algorithm from sklearn to the SPY stock data (as well as other stocks).  The algorithm produced a score of 0.68 for the SPY stock.  I visualized the predicted stock price vs the real-world price results in the out-of-sample (or test set):
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/320_supervised_linear_regression.ipynb"> 320_supervised_linear_regression.ipynb </a>
+ 
+For the knn regression model, I ran the k, leaves, and weights through the Gridsearchcv.  As previously discussed, GridsearchCV came back with the following best parameter:  {'n_neighbors': 25, 'weights': 'uniform', 'leaf_size': 1}:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/330_supervised_knn_regression.ipynb"> 330_supervised_knn_regression.ipynb </a>
+
 - _Has the final model been tested with various inputs to evaluate whether the model generalizes well to unseen data?_
+
+I ran multiple stocks through the linear regression model.  In conclusion, the linear regression model is superior to the knn model.  However, I would personally not rely solely on the predictions of these algorithms for trading stocks.  The models and the data would need to be improved drastically to be considered as a serious input for trading decisions.
+
+
 - _Is the model robust enough for the problem? Do small perturbations (changes) in training data or the input space greatly affect the results?_
+
+No, unfortunately I find that both the linear regression and knn regression models are not robust models for trading.  I would not rely on these predictions to make a decision on buying or selling stocks.  I think that additional data will need to be added to the dataset to increase the strength of the predictions.  I am ok with this as through this project, I realize that I am more of a fundamental analyst than a technical analyst.  I will keep machine learning algorithms in my back pocket when researching stocks but it won't be the primary tool to drive any of my decisions.  Instead, I prefer to rely on all of the visualizations in the data exploration section of this project for making decisions on trades.
+
+Part of the reason for not using machine learning algorithms as a primary tool is that I find myself gravitating towards the Efficient Market Hypothesis where the price of shares always incorporate all relevant information in near real-time fashion.   However, I realize that professional trading firms have their trades automated with extremely sophisticated machine learning tools that find market inconsistencies within milliseconds.
+
+
 - _Can results found from the model be trusted?_
+
+No.  They cannot.  As discussed above.  Although it's a tool I will continue to build and incorporate in some manner, I will rely more on fundamental analysis to make my decisions on buying and selling stocks.
+
 
 ### Justification
 In this section, your model’s final solution and its results should be compared to the benchmark you established earlier in the project using some type of statistical analysis. You
@@ -284,42 +244,65 @@ should also justify whether these results and the solution are significant enoug
 - _Have you thoroughly analyzed and discussed the final solution?_
 - _Is the final solution significant enough to have solved the problem?_
 
+with linear regression, I was able to beat the benchmark of 50%. In other words, the predictions produced by linear regression are better than chance.  The following file displays a score of 0.68 (68%) for predicting the price of the SPY stock five days out: 
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/320_supervised_linear_regression.ipynb"> 320_supervised_linear_regression.ipynb </a>
+  
+On the other hand, the knn regression did not perform as well.  For the SPY stock prediction, knn regression produced a score of -22.54:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/330_supervised_knn_regression.ipynb"> 330_supervised_knn_regression.ipynb </a>
+
 
 ## V. Conclusion
-_(approx. 1-2 pages)_
 
 ### Free-Form Visualization
-In this section, you will need to provide some form of visualization that emphasizes an important quality about the project. It is much more free-form, but should reasonably support a
-significant result or characteristic about the problem that you want to discuss. Questions to ask yourself when writing this section:
-- _Have you visualized a relevant or important quality about the problem, dataset, input data, or results?_
-- _Is the visualization thoroughly analyzed and discussed?_
-- _If a plot is provided, are the axes, title, and datum clearly defined?_
+
+Most, if not all, of the visualization produced are now invaluable to my research on stocks. I've already talked at length about all of my visualizations in one of the sections above.  If I had to choose one, I would choose the first visualization that normalizes all stocks for an easy comparison on performance.  This was the first "oh wow" moment.  And the "oh wow"  moments just kept building after each visualization.
+
+You can view the "normalized" visuals in the following file in my github repository:
+1) <a href="https://github.com/carldgosselin/build-a-stock-price-indicator/blob/master/160_exploratory_visualization.ipynb"> 160_exploratory_visualization.ipynb </a>
+
 
 ### Reflection
 In this section, you will summarize the entire end-to-end problem solution and discuss one or two particular aspects of the project you found interesting or difficult. You are
 expected to reflect on the project as a whole to show that you have a firm understanding of the entire process employed in your work. Questions to ask yourself when writing this
 section:
 - _Have you thoroughly summarized the entire process you used for this project?_
+
+I want to start off by saying that this was one of the most amazing educational journeys I've been on.  At the beginning of this course, I never would have imagined how engaging this course would be.  I had my doubts about how I would connect with other students and Udacity teachers.  I must say that I felt more engaged than any of my courses that I've attended at University.  I was also not enthusiastic of the forums for answering questions and helping others but, in the end, I found this medium to be a saviour.  Hearing about other people's challenges, helping others and getting input from others gave me that extra push to move forward.   
+
 - _Were there any interesting aspects of the project?_
+
+Some of the most eye-opening moments in this project was the visualization during data exploration.  Previously, my research on the stock market consisted of navigating to google.com/finance to review numbers and downloading financial reports of the stocks I was monitoring.  Turning numbers into visualization and comparing my favorite stocks to the SPY stock gave me a whole new perspective on the companies I've been tracking.
+
+Visualizing the normalized data for each stock and then comparing them to each other gave me a better view of which stocks where the most successful.
+Basically, I found all of the visualization techniques in Tucker Balch's class really enlightening and useful:  normalization, bollinger bands, daily returns, scatter plots, risks vs returns comparison... the list goes on.
+
+
 - _Were there any difficult aspects of the project?_
+
+- I followed Tucker Balch's course on Machine Learning for Trading.  As the course progressed, there was less and less support and guidance for the python code related to the concepts being taught.  This was a challenge for me as it took days, if not weeks, to research and experiment with the code to see the concepts in action, such as the Sharpe Ratio, CAPM, etc...
+
+In the end, however, I was able to push through and build the code that would create the desired results and visualization.  I'm a better person for going through these challenges.
+
 - _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
 
+Yes, the model and solution does meet my expectations.  Honestly, I'm just happy that I applied a machine learning algorithm to stock data.  However, I do realize that using simple machine learning algorithms such as linear regression and knn by themselves won't make me a rich man.  These may have worked in the 70s but I'm realizing that today's market is much too efficient to make money on basic machine learning algorithms.  I think the main reason why simple algorithms does cut it anymore is that too many people are looking at the data in the same manner.  Therefore, if too many players are using the same strategies to win in a zero-sum game, that strategy becomes useless.  In today's market, I would think that the market is one by the people, or companies, that collect and analyze data in unique and creative ways in addition to having the fastest connection and servers to the market.
+
+
 ### Improvement
-In this section, you will need to provide discussion as to how one aspect of the implementation you designed could be improved. As an example, consider ways your implementation can be
-made more general, and what would need to be modified. You do not need to make this improvement, but the potential solutions resulting from these changes are considered and
-compared/contrasted to your current solution. Questions to ask yourself when writing this section:
-- _Are there further improvements that could be made on the algorithms or techniques you used in this project?_
-- _Were there algorithms or techniques you researched that you did not know how to implement, but would consider using if you knew how?_
-- _If you used your final solution as the new benchmark, do you think an even better solution exists?_
 
------------
+The first thing I would improve in this project is adding additional data to increase the strength of the prediction.  For example, I would experiment with additional data such as:
+- P/E ratio
+- Market capitalization
+- Insider trading
+- Range
+- 52 week high and low
+- local weather
 
-**Before submitting, ask yourself. . .**
+I would also like to experiment with more creative data related to the people-side of the business.  It would be great to interject data that related to how "happy" people are working in the organization or how much volunteering employees participate per year.  Who knows, such stats may increase the prediction strength.
 
-- Does the project report you’ve written follow a well-organized structure similar to that of the project template?
-- Is each section (particularly **Analysis** and **Methodology**) written in a clear, concise and specific fashion? Are there any ambiguous terms or phrases that need clarification?
-- Would the intended audience of your project be able to understand your analysis, methods, and results?
-- Have you properly proof-read your project report to assure there are minimal grammatical and spelling mistakes?
-- Are all the resources used for this project correctly cited and referenced?
-- Is the code that implements your solution easily readable and properly commented?
-- Does the code execute without error and produce results similar to those reported?
+I would also like to apply Ensemble learners, boosting and bagging techniques (as discussed in Tucker Balch's Machine Learning for Trading course).  From what I understand, Ensemble learning amalgamates different learning algorithms to increase the strength of a prediction.  I would also like to further experiment with algorithms in the reinforcement learning, Q-Learning and Dyna space.
+
+To answer your question about if even better solutions exists, I would imagine there are better solutions out there.  I hear that most trades on the market are done by machines.  I can images that these machines are using much more sophisticated algorithms than a simple linear regression or knn.  Perhaps I'll get there someday.
+
+
+
