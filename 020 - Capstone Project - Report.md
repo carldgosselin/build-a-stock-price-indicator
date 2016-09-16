@@ -285,7 +285,7 @@ In the end, however, I was able to push through and build the code that would cr
 
 - _Does the final model and solution fit your expectations for the problem, and should it be used in a general setting to solve these types of problems?_
 
-Yes, the model and solution does meet my expectations.  Honestly, I'm just happy that I applied a machine learning algorithm to stock data.  However, I do realize that using simple machine learning algorithms such as linear regression and knn by themselves won't make me a rich man.  These may have worked in the 70s but I'm realizing that today's market is much too efficient to make money on basic machine learning algorithms.  I think the main reason why simple algorithms does cut it anymore is that too many people are looking at the data in the same manner.  Therefore, if too many players are using the same strategies to win in a zero-sum game, that strategy becomes useless.  In today's market, I would think that the market is one by the people, or companies, that collect and analyze data in unique and creative ways in addition to having the fastest connection and servers to the market.
+Yes, the model and solution does meet my expectations.  Honestly, I'm just happy that I applied a machine learning algorithm to stock data.  However, I do realize that using simple machine learning algorithms such as linear regression and knn by themselves won't make me a rich man.  These may have worked in the 70s but I'm realizing that today's market is much too efficient to make money on basic machine learning algorithms.  I think the main reason why simple algorithms doesn't cut it anymore is that too many people are looking at the data in the same manner.  Therefore, if too many players are using the same strategies to win in a zero-sum game, that strategy becomes useless.  In today's market, I would think that the market is won by the people, or companies, that collect and analyze data in unique and creative ways in addition to having the fastest connection and servers to the market.
 
 
 ### Improvement
@@ -296,7 +296,7 @@ The first thing I would improve in this project is adding additional data to inc
 - Insider trading
 - Range
 - 52 week high and low
-- local weather
+- looking at local weather where trades are made
 
 I would also like to experiment with more creative data related to the people-side of the business.  It would be great to interject data that related to how "happy" people are working in the organization or how much volunteering employees participate per year.  Who knows, such stats may increase the prediction strength.
 
