@@ -26,7 +26,7 @@ This project requires the following software and libraries:
 
 ### Run
 
-Open the following file in an iPython notebook:  `build_a_stock_price_indicator.ipynb`
+Open the following file:  `020 - Capstone Project - Report.md`
 
 ### Datasets
 
