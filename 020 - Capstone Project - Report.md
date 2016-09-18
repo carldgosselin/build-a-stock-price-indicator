@@ -14,6 +14,11 @@ I've chosen to apply my new-found knowledge in machine learning algorithms to th
 A) understand how to apply machine learning algorithms to stock data to predict future price <br>
 B) understand the current challenges of using machine learning algorithms to help predict stock prices <br>
 
+Machine Learning Algorithms
+For this project, I will be applying two machine learning algorithms to the stock data to predict the stock price 5 days later:
+A) sklearn's Linear Regression (http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+B) sklearn's KNN Regression (http://scikit-learn.org/stable/modules/neighbors.html)
+
 **Project origin**
 
 This project originated from Udacity's course - <a href="https://www.udacity.com/course/machine-learning-for-trading--ud501?_ga=1.193565739.763209811.1447720300"> Machine Learning for Trading </a>.  
@@ -48,7 +53,11 @@ My current analysis involves tracking a handful of stocks on google.com/finance.
 
 ### Metrics
 
-I will be using a train/test split on the stock data.  A section of the data will be used to train the model and another section will be used to test the model on unseen data (out of sample data).  I will use the score method to measure the difference between predicted prices and real prices in the testing (out-of-sample) dataset.  
+I will be attempting to use the train/test split utility on the stock data from sklearn's cross_validation module .  A section of the data will be used to train the model and another section will be used to test the model on unseen data (out of sample data).  I will use the score method to measure the difference between predicted prices and real prices in the testing (out-of-sample) dataset.  
+
+Sample lines of code:
+splitting the train / test data:  `X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=0)`
+Displaying the predictive score of linear regression or knn regression on unseen data -> `print('regr.score(X_test, y_test): %.2f' % regr.score(X_test, y_test))`
 
 ## II. Analysis
 
@@ -66,6 +75,37 @@ All stock data files have the same columns: <br>
 - Adj Close (the adjusted close price) <br>
 note: the adjusted close price will be different from the "Close" price when a company chooses to split the stock, give dividends, etc... <br>
 
+Sample data - SPY stock:
+
+                  Open        High         Low       Close     Volume	Adj Close
+Date                                                                    
+2011-08-10  115.260002  116.279999  111.949997  112.290001  662607400	101.247666   
+2011-08-11  113.260002  118.919998  112.320000  117.330002  487979700	105.792045    
+2011-08-12  118.400002  119.209999  117.279999  118.120003  313731600	106.504359   
+2011-08-15  119.190002  120.739998  119.000000  120.620003  258810600	108.758515   
+2011-08-16  119.470001  120.690002  118.309998  119.589996  294095200	107.829797   
+
+
+
+Statistical analysis of sample data using dataframe.describe:
+
+              Open         High          Low        Close        Volume		Adj Close
+count  1258.000000  1258.000000  1258.000000  1258.000000  1.258000e+03		1258.000000    
+mean    174.596113   175.463052   173.685445   174.652886  1.342206e+08		166.880638   
+std      30.696889    30.727845    30.658095    30.700588  6.514242e+07 	33.616377  
+min     108.349998   112.580002   107.430000   109.930000  3.731780e+07 	99.632548  
+25%     143.430000   144.094997   142.627502   143.367501  9.109502e+07 	132.713005 
+50%     183.714996   184.275002   182.800003   183.835007  1.189386e+08		174.888333    
+75%     203.625004   204.527496   202.550003   203.467499  1.589144e+08		199.052500   
+max     218.399994   218.759995   217.800003   218.179993  6.626074e+08		218.179993  
+
+note:  I don't have anything to highlight in the data.  I will however be appending an extra column at the end of the dataset to capture the adjusted close price 5 days later.
+To do this, I will copy the existing "Adj Close" column and shift the data 5 rows up.  Below is the snippet of the code to do this:
+
+df['Adj_Close_5_Days_Later'] = df['Adj Close']
+df['Adj_Close_5_Days_Later'] = df['Adj_Close_5_Days_Later'].shift(-5) 
+
+ 
 Other comments about the data: <br>
 - By default, the csv files are indexed by a number starting from "0".  The code will need to explicitly identify the "Date" column as the index column. <br>
 - The data in the csv files begin with the latest trade day.  Visualizing this data untouched, the graph will show a downward trend for stocks with increasing prices.  The data will need to be re-organized to show a proper linear progression through time. <br>
