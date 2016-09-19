@@ -26,7 +26,7 @@ This project requires the following software and libraries:
 
 ### Run
 
-Open the following file:  `020 - Capstone Project - Report.md`
+Open the following file:  `015 - Udacity Capstone Project - Predicting stock prices 5 days later`
 
 ### Datasets
 
