@@ -1,9 +1,3 @@
-# In Progress...
-
-<p align="center">
-<img src="pics/dancingbear.gif">
-</p>
-
 # UDACITY - Machine Learning Engineer Nanodegree
 
 ### Capstone Project: Build a stock price indicator
